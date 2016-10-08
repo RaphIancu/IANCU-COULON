@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Biblio Tech</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/style.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/bootstrap.min.css') }}" />
+    </head>
+    <body>
+        <div id="page">
+            <div id="header">
+                <div class="jumbotron">
+        		    <h1>Biblio Tech</h1>
+                    <p>Créer ta propre biliothèque !</p>
+                </div>
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="{{ path('myapp_accueil') }}" role="button">Accueil</a></li>
+                    <li><a href="{{ path('myapp_livre_lister') }}" role="button">Livres</a></li>
+                    <li><a href="{{ path('myapp_autheur_lister') }}" role="button">Auteurs</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+
+            <div id="footer">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        <h4>Présentation</4>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h4>Copyright</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h4>Créer par:</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{{ asset('bundles/bibliotheque/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('bundles/bibliotheque/js/bootstrap.min.js') }}"></script>
+    </body>
+</html>

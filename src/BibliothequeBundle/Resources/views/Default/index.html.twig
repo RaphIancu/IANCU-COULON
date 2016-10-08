@@ -1,0 +1,29 @@
+{% extends 'BibliothequeBundle::layout.html.twig' %}
+
+{% block content %}
+<p>Texte descriptif</p>
+<div class="panel panel-default">  
+    <div class="panel-heading">Les auteurs les plus récents</div>
+		{% render (controller("BibliothequeBundle:Autheur:top", {'max': 3})) %}
+</div>
+
+<p>Texte descriptif</p>
+<div class="panel panel-default">
+    <div class="panel-heading">Les derniers livres ajoutés</div>
+		{% render (controller("BibliothequeBundle:Livre:top", {'max': 3})) %}
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

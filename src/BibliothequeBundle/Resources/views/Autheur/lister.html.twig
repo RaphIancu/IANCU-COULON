@@ -1,0 +1,11 @@
+{% extends 'BibliothequeBundle::layout.html.twig' %}
+
+{% block title %}Liste des autheurs{% endblock %}
+
+{% block content %}
+
+{% include 'BibliothequeBundle:Autheur:liste.html.twig' with {'autheurs' : autheurs}  %}
+
+<p><a href="{{ path('myapp_autheur_ajouter') }}">Ajouter un auteur</a><p>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'BibliothequeBundle::layout.html.twig' %}
+
+{% block title %}Liste des livres{% endblock %}
+
+{% block content %}
+
+{% include 'BibliothequeBundle:Livre:liste.html.twig' with {'livres' : livres}  %}
+
+<p><a href="{{ path('myapp_livre_ajouter') }}">Ajouter un livre</a><p>
+
+{% endblock %}

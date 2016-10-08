@@ -1,0 +1,30 @@
+myapp_accueil:
+    path:     /
+    defaults: { _controller: BibliothequeBundle:Default:index }
+myapp_autheur_lister:
+    pattern: /autheur/
+    defaults: { _controller: BibliothequeBundle:Autheur:lister }
+myapp_autheur_ajouter:
+    pattern: /autheur/ajouter
+    defaults: { _controller: BibliothequeBundle:Autheur:editer }
+myapp_autheur_modifier:
+    pattern: /autheur/modifier/{id}
+    defaults: { _controller: BibliothequeBundle:Autheur:editer }
+myapp_autheur_supprimer:
+    pattern: /autheur/supprimer/{id}
+    defaults: { _controller: BibliothequeBundle:Autheur:supprimer }
+myapp_livre_lister:
+    pattern: /livre/
+    defaults: { _controller: BibliothequeBundle:Livre:lister }
+myapp_livre_ajouter:
+    pattern: /livre/ajouter
+    defaults: { _controller: BibliothequeBundle:Livre:editer }
+myapp_livre_modifier:
+    pattern: /livre/modifier/{id}
+    defaults: { _controller: BibliothequeBundle:Livre:editer }
+myapp_livre_supprimer:
+    pattern: /livre/supprimer/{id}
+    defaults: { _controller: BibliothequeBundle:Livre:supprimer }
+myapp_livre_voir:
+    pattern: /livre/voir/{id}
+    defaults: { _controller: BibliothequeBundle:Livre:voir }

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Biblio Tech</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/style.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+		{% block content %}
+		<div class="jumbotron">
+			<h1 class="text-center"><i class="fa fa-book" aria-hidden="true"></i> {{ livre.titre }}</h1>
+		</div>
+		<div class="describe">
+		<dl class="row">
+			<dt class="col-sm-3">Catégorie</dt>
+			<dd class="col-sm-9">{{ livre.categorie.nom }}</dd>
+  			<dt class="col-sm-3"></br></dt>
+			<dd class="col-sm-9"></br></dd>
+  			<dt class="col-sm-3">Auteurs</dt>
+			<dd class="col-sm-9">
+			{% for a in livre.autheurs %}
+			    <ul>
+			    	<li>
+			    		{{ a.prenom }} {{ a.nom}}
+			    	</li>
+			    </ul>
+			{% endfor %}</dd>
+		</dl>
+		<hr class="style">
+
+		<p class="lead">{{ livre.description }}</p>
+
+		<a href="{{ path('myapp_livre_lister') }}"><button type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i> Retour</button></a>
+		</div>
+		{% endblock %}
+	</body>
+</html>
+
