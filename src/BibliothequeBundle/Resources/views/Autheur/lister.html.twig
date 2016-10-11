@@ -6,6 +6,6 @@
 
 {% include 'BibliothequeBundle:Autheur:liste.html.twig' with {'autheurs' : autheurs}  %}
 
-<p><a href="{{ path('myapp_autheur_ajouter') }}">Ajouter un auteur</a><p>
+<p><a href="{{ path('myapp_autheur_ajouter') }}"><button type="button" class="btn btn-secondary"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un auteur</button></a></p>
 
 {% endblock %}

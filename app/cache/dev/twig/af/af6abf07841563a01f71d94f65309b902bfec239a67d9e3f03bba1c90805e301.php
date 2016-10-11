@@ -22,32 +22,32 @@ class __TwigTemplate_6c078a9eaca5fcf860f747a3aa3e861b51cc3e30bba3915d9e5f6889f9b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d3c1e3c9cbaa9d13e335be87497895640d53ef2d40d4eefe7aed7a8a2fe4843e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d3c1e3c9cbaa9d13e335be87497895640d53ef2d40d4eefe7aed7a8a2fe4843e->enter($__internal_d3c1e3c9cbaa9d13e335be87497895640d53ef2d40d4eefe7aed7a8a2fe4843e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:lister.html.twig"));
+        $__internal_a8fd99d17a22b8cb6ee3a154abc12b538184e810c18e3bc6508d3e36722746ed = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a8fd99d17a22b8cb6ee3a154abc12b538184e810c18e3bc6508d3e36722746ed->enter($__internal_a8fd99d17a22b8cb6ee3a154abc12b538184e810c18e3bc6508d3e36722746ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:lister.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d3c1e3c9cbaa9d13e335be87497895640d53ef2d40d4eefe7aed7a8a2fe4843e->leave($__internal_d3c1e3c9cbaa9d13e335be87497895640d53ef2d40d4eefe7aed7a8a2fe4843e_prof);
+        $__internal_a8fd99d17a22b8cb6ee3a154abc12b538184e810c18e3bc6508d3e36722746ed->leave($__internal_a8fd99d17a22b8cb6ee3a154abc12b538184e810c18e3bc6508d3e36722746ed_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_acd575dd5864cd11bf2e6e2b4f403c50bc7d94acdd6d4536bae2c34f691d35d3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_acd575dd5864cd11bf2e6e2b4f403c50bc7d94acdd6d4536bae2c34f691d35d3->enter($__internal_acd575dd5864cd11bf2e6e2b4f403c50bc7d94acdd6d4536bae2c34f691d35d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_cc10361b0c66818809e0fed77e5ef58e45cee16d050dd5aa6c1da8a2b7dbb8e6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cc10361b0c66818809e0fed77e5ef58e45cee16d050dd5aa6c1da8a2b7dbb8e6->enter($__internal_cc10361b0c66818809e0fed77e5ef58e45cee16d050dd5aa6c1da8a2b7dbb8e6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Liste des autheurs";
         
-        $__internal_acd575dd5864cd11bf2e6e2b4f403c50bc7d94acdd6d4536bae2c34f691d35d3->leave($__internal_acd575dd5864cd11bf2e6e2b4f403c50bc7d94acdd6d4536bae2c34f691d35d3_prof);
+        $__internal_cc10361b0c66818809e0fed77e5ef58e45cee16d050dd5aa6c1da8a2b7dbb8e6->leave($__internal_cc10361b0c66818809e0fed77e5ef58e45cee16d050dd5aa6c1da8a2b7dbb8e6_prof);
 
     }
 
     // line 5
     public function block_content($context, array $blocks = array())
     {
-        $__internal_7376c0fc5230690bf145949489f08b4a4f6f21a5ed577a59e4475b4b7d8c70c7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7376c0fc5230690bf145949489f08b4a4f6f21a5ed577a59e4475b4b7d8c70c7->enter($__internal_7376c0fc5230690bf145949489f08b4a4f6f21a5ed577a59e4475b4b7d8c70c7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_31defafc6a4278c90ee134029f4cc517217450815610fd4f02249fee0a996da9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_31defafc6a4278c90ee134029f4cc517217450815610fd4f02249fee0a996da9->enter($__internal_31defafc6a4278c90ee134029f4cc517217450815610fd4f02249fee0a996da9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
         echo "
@@ -59,11 +59,11 @@ class __TwigTemplate_6c078a9eaca5fcf860f747a3aa3e861b51cc3e30bba3915d9e5f6889f9b
 <p><a href=\"";
         // line 9
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("myapp_autheur_ajouter");
-        echo "\">Ajouter un auteur</a><p>
+        echo "\"><button type=\"button\" class=\"btn btn-secondary\"><i class=\"fa fa-plus\" aria-hidden=\"true\"></i> Ajouter un auteur</button></a></p>
 
 ";
         
-        $__internal_7376c0fc5230690bf145949489f08b4a4f6f21a5ed577a59e4475b4b7d8c70c7->leave($__internal_7376c0fc5230690bf145949489f08b4a4f6f21a5ed577a59e4475b4b7d8c70c7_prof);
+        $__internal_31defafc6a4278c90ee134029f4cc517217450815610fd4f02249fee0a996da9->leave($__internal_31defafc6a4278c90ee134029f4cc517217450815610fd4f02249fee0a996da9_prof);
 
     }
 
@@ -92,7 +92,7 @@ class __TwigTemplate_6c078a9eaca5fcf860f747a3aa3e861b51cc3e30bba3915d9e5f6889f9b
 
 {% include 'BibliothequeBundle:Autheur:liste.html.twig' with {'autheurs' : autheurs}  %}
 
-<p><a href=\"{{ path('myapp_autheur_ajouter') }}\">Ajouter un auteur</a><p>
+<p><a href=\"{{ path('myapp_autheur_ajouter') }}\"><button type=\"button\" class=\"btn btn-secondary\"><i class=\"fa fa-plus\" aria-hidden=\"true\"></i> Ajouter un auteur</button></a></p>
 
 {% endblock %}";
     }

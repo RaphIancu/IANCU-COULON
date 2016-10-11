@@ -16,8 +16,8 @@ class __TwigTemplate_7641fdaf3c5cc9596f555903ad9494addb937e3c7b5bca44b740041c4fd
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_609c21daf6098e248d94a24416a78b64c325a5514eb2ec9a174554af53447c7d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_609c21daf6098e248d94a24416a78b64c325a5514eb2ec9a174554af53447c7d->enter($__internal_609c21daf6098e248d94a24416a78b64c325a5514eb2ec9a174554af53447c7d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:editer.html.twig"));
+        $__internal_4e748487eaef029eb41d01adeaac701dd80b507a41c671f28533ac005d1f1aaa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4e748487eaef029eb41d01adeaac701dd80b507a41c671f28533ac005d1f1aaa->enter($__internal_4e748487eaef029eb41d01adeaac701dd80b507a41c671f28533ac005d1f1aaa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:editer.html.twig"));
 
         // line 1
         echo "<html>
@@ -45,15 +45,15 @@ class __TwigTemplate_7641fdaf3c5cc9596f555903ad9494addb937e3c7b5bca44b740041c4fd
                     <li><a href=\"";
         // line 17
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("myapp_accueil");
-        echo "\" role=\"button\">Accueil</a></li>
+        echo "\" role=\"button\" class=\"menu\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> Accueil</a></li>
                     <li><a href=\"";
         // line 18
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("myapp_livre_lister");
-        echo "\" role=\"button\">Livres</a></li>
+        echo "\" role=\"button\" class=\"menu\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i> Livres</a></li>
                     <li><a href=\"";
         // line 19
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("myapp_autheur_lister");
-        echo "\" role=\"button\">Auteur</a></li>
+        echo "\" role=\"button\" class=\"menu\"><i class=\"fa fa-users\" aria-hidden=\"true\"></i> Auteurs</a></li>
                 </ul>
             </div>
             <div id=\"content\">
@@ -74,15 +74,15 @@ class __TwigTemplate_7641fdaf3c5cc9596f555903ad9494addb937e3c7b5bca44b740041c4fd
     </body>
 </html>";
         
-        $__internal_609c21daf6098e248d94a24416a78b64c325a5514eb2ec9a174554af53447c7d->leave($__internal_609c21daf6098e248d94a24416a78b64c325a5514eb2ec9a174554af53447c7d_prof);
+        $__internal_4e748487eaef029eb41d01adeaac701dd80b507a41c671f28533ac005d1f1aaa->leave($__internal_4e748487eaef029eb41d01adeaac701dd80b507a41c671f28533ac005d1f1aaa_prof);
 
     }
 
     // line 23
     public function block_content($context, array $blocks = array())
     {
-        $__internal_8c13e732b380adc46d8eed70d24d6dde6321cd258efc630bfbd60e930e914f3c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8c13e732b380adc46d8eed70d24d6dde6321cd258efc630bfbd60e930e914f3c->enter($__internal_8c13e732b380adc46d8eed70d24d6dde6321cd258efc630bfbd60e930e914f3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_1cc3dac83b852917a9a52fa86196f0bbc72f6733db6dfba3c0cbead90127cabe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1cc3dac83b852917a9a52fa86196f0bbc72f6733db6dfba3c0cbead90127cabe->enter($__internal_1cc3dac83b852917a9a52fa86196f0bbc72f6733db6dfba3c0cbead90127cabe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 24
         echo "
@@ -121,7 +121,7 @@ class __TwigTemplate_7641fdaf3c5cc9596f555903ad9494addb937e3c7b5bca44b740041c4fd
 
 \t\t\t\t";
         
-        $__internal_8c13e732b380adc46d8eed70d24d6dde6321cd258efc630bfbd60e930e914f3c->leave($__internal_8c13e732b380adc46d8eed70d24d6dde6321cd258efc630bfbd60e930e914f3c_prof);
+        $__internal_1cc3dac83b852917a9a52fa86196f0bbc72f6733db6dfba3c0cbead90127cabe->leave($__internal_1cc3dac83b852917a9a52fa86196f0bbc72f6733db6dfba3c0cbead90127cabe_prof);
 
     }
 
@@ -158,9 +158,9 @@ class __TwigTemplate_7641fdaf3c5cc9596f555903ad9494addb937e3c7b5bca44b740041c4fd
                     <p>Créer ta propre biliothèque !</p>
                 </div>
                 <ul class=\"nav nav-pills nav-justified\">
-                    <li><a href=\"{{ path('myapp_accueil') }}\" role=\"button\">Accueil</a></li>
-                    <li><a href=\"{{ path('myapp_livre_lister') }}\" role=\"button\">Livres</a></li>
-                    <li><a href=\"{{ path('myapp_autheur_lister') }}\" role=\"button\">Auteur</a></li>
+                    <li><a href=\"{{ path('myapp_accueil') }}\" role=\"button\" class=\"menu\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> Accueil</a></li>
+                    <li><a href=\"{{ path('myapp_livre_lister') }}\" role=\"button\" class=\"menu\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i> Livres</a></li>
+                    <li><a href=\"{{ path('myapp_autheur_lister') }}\" role=\"button\" class=\"menu\"><i class=\"fa fa-users\" aria-hidden=\"true\"></i> Auteurs</a></li>
                 </ul>
             </div>
             <div id=\"content\">

@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/style.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('bundles/bibliotheque/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
         <div id="page">
@@ -13,9 +14,9 @@
                     <p>Créer ta propre biliothèque !</p>
                 </div>
                 <ul class="nav nav-pills nav-justified">
-                    <li><a href="{{ path('myapp_accueil') }}" role="button">Accueil</a></li>
-                    <li><a href="{{ path('myapp_livre_lister') }}" role="button">Livres</a></li>
-                    <li><a href="{{ path('myapp_autheur_lister') }}" role="button">Auteurs</a></li>
+                    <li><a href="{{ path('myapp_accueil') }}" role="button" class="menu"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
+                    <li><a href="{{ path('myapp_livre_lister') }}" role="button" class="menu"><i class="fa fa-book" aria-hidden="true"></i> Livres</a></li>
+                    <li><a href="{{ path('myapp_autheur_lister') }}" role="button" class="menu"><i class="fa fa-users" aria-hidden="true"></i> Auteurs</a></li>
                 </ul>
             </div>
 

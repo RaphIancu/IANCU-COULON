@@ -28,3 +28,6 @@ myapp_livre_supprimer:
 myapp_livre_voir:
     pattern: /livre/voir/{id}
     defaults: { _controller: BibliothequeBundle:Livre:voir }
+myapp_insert_data:
+    pattern: /insert
+    defaults: { _controller: BibliothequeBundle:InsertData:insert }

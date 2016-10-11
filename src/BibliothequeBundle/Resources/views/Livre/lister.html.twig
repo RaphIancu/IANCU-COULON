@@ -6,6 +6,7 @@
 
 {% include 'BibliothequeBundle:Livre:liste.html.twig' with {'livres' : livres}  %}
 
-<p><a href="{{ path('myapp_livre_ajouter') }}">Ajouter un livre</a><p>
+
+<p><a href="{{ path('myapp_livre_ajouter') }}"><button type="button" class="btn btn-secondary"><i class="fa fa-plus" aria-hidden="true"></i> Ajouter un livre</button></a></p>
 
 {% endblock %}

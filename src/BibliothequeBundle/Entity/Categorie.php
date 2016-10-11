@@ -22,6 +22,19 @@ class Categorie
     private $nom;
 
     /**
+     * Set id
+     *
+     * @param string $id
+     * @return Categorie
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
      * Get id
      *
      * @return integer 

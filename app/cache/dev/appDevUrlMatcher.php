@@ -173,6 +173,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // myapp_insert_data
+        if ($pathinfo === '/insert') {
+            return array (  '_controller' => 'BibliothequeBundle\\Controller\\InsertDataController::insertAction',  '_route' => 'myapp_insert_data',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

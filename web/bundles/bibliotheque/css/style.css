@@ -34,12 +34,12 @@ body > div.describe > dl
 button.btn.btn-secondary
 {
 	color: black;
-	background-color: white;
+	background-color: #eeeeee;
 }
 button.btn.btn-secondary:hover
 {
-	background-color: #e6e6e6;
-    border-color: #bebebe;
+	text-decoration: none;
+    background-color: #eeeeee;
 }
 hr.style
 { 
@@ -60,4 +60,8 @@ hr.style:before
 	border-color: #8c8b8b; 
 	border-width: 0 0 1px 0; 
 	border-radius: 20px; 
+}
+a.menu, a.menu:hover, a.menu:active, a.menu:visited, a.menu:focus
+{
+    color: black;
 }
