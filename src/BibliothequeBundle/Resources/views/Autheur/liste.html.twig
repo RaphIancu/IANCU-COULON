@@ -12,8 +12,8 @@
 {% for a in autheurs %}
 <tbody>
     <tr>
-		<td>{{ a.nom }}</td>
-		<td>{{ a.prenom }}</td>
+		<td>{{ a.nom | upper}}</td>
+		<td>{{ a.prenom | capitalize}}</td>
 		<td>{{ a.dateNaissance|date('d/m/Y') }}</td>
 		<td>{{ a.sexe }}</td>
 		<td><a href="{{ path('myapp_autheur_modifier', { 'id': a.id }) }}">Modifier</a></td>

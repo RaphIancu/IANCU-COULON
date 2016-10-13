@@ -11,8 +11,8 @@
 {% for f in livres %}
 <tbody>
 	<tr>
-		<td>{{ f.titre }}</td>
-		<td>{{ f.description | truncate(50, false, "...") }}</td>
+		<td>{{ f.titre | capitalize}}</td>
+		<td>{{ f.description | truncate(50, false, "..." | capitalize) }}</td>
 		<td><a href="{{ path('myapp_livre_voir', { 'id': f.id }) }}">Voir</a></td>
 		<td><a href="{{ path('myapp_livre_modifier', { 'id': f.id }) }}">Modifier</a></td>
 		<td><a href="{{ path('myapp_livre_supprimer', { 'id': f.id }) }}">Supprimer</a></td>

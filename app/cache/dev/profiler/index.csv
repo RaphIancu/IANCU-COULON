@@ -1,0 +1,3 @@
+bec2a5,127.0.0.1,GET,http://localhost:82/IANCU-COULON/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBibliothequeBundle%253AAutheur%253Atop,1476275965,853ef4,200
+de9c84,127.0.0.1,GET,http://localhost:82/IANCU-COULON/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBibliothequeBundle%253ALivre%253Atop,1476275965,853ef4,200
+853ef4,127.0.0.1,GET,http://localhost:82/IANCU-COULON/web/app_dev.php/,1476275965,,200

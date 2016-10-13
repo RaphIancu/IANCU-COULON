@@ -1,3 +1,14 @@
+#header > div
+{
+	background-image:url('../images/fond.png');
+	color: #00C704;
+}
+#titre
+{
+	background-image:url('../images/fond.png');
+	color: #00C704;
+	margin-bottom: 3%;
+}
 div.jumbotron
 {
     text-align: center;
@@ -10,6 +21,8 @@ div.jumbotron
 #footer > div
 {
 	text-align: center;
+	margin-right: 15%;
+	margin-left: 15%;
 }
 #content
 {
@@ -33,13 +46,13 @@ body > div.describe > dl
 }
 button.btn.btn-secondary
 {
-	color: black;
-	background-color: #eeeeee;
+	color: white;
+	background-color: #00C704;
 }
 button.btn.btn-secondary:hover
 {
 	text-decoration: none;
-    background-color: #eeeeee;
+    background-color: #00AD03;
 }
 hr.style
 { 
@@ -64,4 +77,70 @@ hr.style:before
 a.menu, a.menu:hover, a.menu:active, a.menu:visited, a.menu:focus
 {
     color: black;
+}
+.panel-default>.panel-heading 
+{
+	color: white !important;
+	background-color: #00AD03 !important;
+}
+a 
+{
+    color: #00AD03 !important;
+}
+a:hover
+{
+    color: #008703 !important;
+}
+.nav>li>a:hover, .nav>li>a:focus 
+{
+    text-decoration: none;
+    background-color: #00AD03 !important;
+    color: white !important;
+}
+#content > form > button 
+{
+	color: #00AD03;
+    background-color: white;
+}
+.btn-default:hover {
+    color: white !important;
+    background-color: #00AD03 !important;
+    border-color: #00AD03 !important;
+}
+#content > h1 
+{
+	color: #00C704;
+    text-align: center;
+}
+#footer > div > div:nth-child(3),
+#footer > div > div:nth-child(1) 
+{
+	background-color: #00AD03 !important;
+	color: white;
+	height: 125px;
+}
+#footer > div > div:nth-child(2)
+{
+	color: #00AD03;
+	height: 125px;
+}
+#footer > div > div:nth-child(2) > p
+{
+	padding-top: 2%;
+}
+#sstitre
+{
+	color:	#00AD03;
+}
+@media (min-width: 768px) {
+	dt.col-sm-3 
+	{
+	    width: 40% !important;
+	}
+}
+@media (min-width: 768px) {
+	dd.col-sm-9 
+	{
+	    width: 60% !important;
+	}
 }
