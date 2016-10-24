@@ -21,42 +21,40 @@ class __TwigTemplate_ade50a74ddab6b73dc12b25ac2eaf933a55820e560afcc4812636cab4e3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a3c2c15da0e19fb611e2ea78e12732e9b40a3d900ca522474a05bf0847152d8c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a3c2c15da0e19fb611e2ea78e12732e9b40a3d900ca522474a05bf0847152d8c->enter($__internal_a3c2c15da0e19fb611e2ea78e12732e9b40a3d900ca522474a05bf0847152d8c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Default:index.html.twig"));
+        $__internal_9264cb3e8fa4ab7dcf685fcc0f03535b7f79c3e3673ffe8ce34334f73d405dff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9264cb3e8fa4ab7dcf685fcc0f03535b7f79c3e3673ffe8ce34334f73d405dff->enter($__internal_9264cb3e8fa4ab7dcf685fcc0f03535b7f79c3e3673ffe8ce34334f73d405dff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a3c2c15da0e19fb611e2ea78e12732e9b40a3d900ca522474a05bf0847152d8c->leave($__internal_a3c2c15da0e19fb611e2ea78e12732e9b40a3d900ca522474a05bf0847152d8c_prof);
+        $__internal_9264cb3e8fa4ab7dcf685fcc0f03535b7f79c3e3673ffe8ce34334f73d405dff->leave($__internal_9264cb3e8fa4ab7dcf685fcc0f03535b7f79c3e3673ffe8ce34334f73d405dff_prof);
 
     }
 
     // line 3
     public function block_content($context, array $blocks = array())
     {
-        $__internal_628acd927ad53b696efa693c801af49d49d3975575d94c624a50896e02be9b01 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_628acd927ad53b696efa693c801af49d49d3975575d94c624a50896e02be9b01->enter($__internal_628acd927ad53b696efa693c801af49d49d3975575d94c624a50896e02be9b01_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_fedee6068a0ed8869f936322d1799c2f120d05ef7b447d6ce274be6085b4854c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fedee6068a0ed8869f936322d1799c2f120d05ef7b447d6ce274be6085b4854c->enter($__internal_fedee6068a0ed8869f936322d1799c2f120d05ef7b447d6ce274be6085b4854c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
-        echo "<p>Texte descriptif</p>
-<div class=\"panel panel-default\">  
-    <div class=\"panel-heading\">Les auteurs les plus récents</div>
+        echo "<div class=\"panel panel-default\">  
+    <div class=\"panel-heading\">LES AUTEURS LES PLUS RECENTS</div>
 \t\t";
-        // line 7
+        // line 6
         echo $this->env->getExtension('Symfony\Bundle\TwigBundle\Extension\ActionsExtension')->renderUri($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("BibliothequeBundle:Autheur:top", array("max" => 3)), array());
-        // line 8
+        // line 7
         echo "</div>
 
-<p>Texte descriptif</p>
 <div class=\"panel panel-default\">
-    <div class=\"panel-heading\">Les derniers livres ajoutés</div>
+    <div class=\"panel-heading\">LES DERNIERS LIVRES AJOUTES</div>
 \t\t";
-        // line 13
+        // line 11
         echo $this->env->getExtension('Symfony\Bundle\TwigBundle\Extension\ActionsExtension')->renderUri($this->env->getExtension('Symfony\Bridge\Twig\Extension\HttpKernelExtension')->controller("BibliothequeBundle:Livre:top", array("max" => 3)), array());
-        // line 14
+        // line 12
         echo "</div>
 ";
         
-        $__internal_628acd927ad53b696efa693c801af49d49d3975575d94c624a50896e02be9b01->leave($__internal_628acd927ad53b696efa693c801af49d49d3975575d94c624a50896e02be9b01_prof);
+        $__internal_fedee6068a0ed8869f936322d1799c2f120d05ef7b447d6ce274be6085b4854c->leave($__internal_fedee6068a0ed8869f936322d1799c2f120d05ef7b447d6ce274be6085b4854c_prof);
 
     }
 
@@ -72,7 +70,7 @@ class __TwigTemplate_ade50a74ddab6b73dc12b25ac2eaf933a55820e560afcc4812636cab4e3
 
     public function getDebugInfo()
     {
-        return array (  56 => 14,  54 => 13,  47 => 8,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  54 => 12,  52 => 11,  46 => 7,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     public function getSource()
@@ -80,15 +78,13 @@ class __TwigTemplate_ade50a74ddab6b73dc12b25ac2eaf933a55820e560afcc4812636cab4e3
         return "{% extends 'BibliothequeBundle::layout.html.twig' %}
 
 {% block content %}
-<p>Texte descriptif</p>
 <div class=\"panel panel-default\">  
-    <div class=\"panel-heading\">Les auteurs les plus récents</div>
+    <div class=\"panel-heading\">LES AUTEURS LES PLUS RECENTS</div>
 \t\t{% render (controller(\"BibliothequeBundle:Autheur:top\", {'max': 3})) %}
 </div>
 
-<p>Texte descriptif</p>
 <div class=\"panel panel-default\">
-    <div class=\"panel-heading\">Les derniers livres ajoutés</div>
+    <div class=\"panel-heading\">LES DERNIERS LIVRES AJOUTES</div>
 \t\t{% render (controller(\"BibliothequeBundle:Livre:top\", {'max': 3})) %}
 </div>
 {% endblock %}

@@ -15,8 +15,8 @@ class __TwigTemplate_cb8f7fc48beda59c16dbd9926d5b7fb89c1866c2f2f8968b33f8d51c052
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3a3c95bfd5f7683e443773de17d0cac40283c6cc1e2bbf6ec6265b05a4910aaf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3a3c95bfd5f7683e443773de17d0cac40283c6cc1e2bbf6ec6265b05a4910aaf->enter($__internal_3a3c95bfd5f7683e443773de17d0cac40283c6cc1e2bbf6ec6265b05a4910aaf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Livre:liste.html.twig"));
+        $__internal_1edb74078de5b53e101297781bae6d89c4abb34949713d80fde965aebdba2f68 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1edb74078de5b53e101297781bae6d89c4abb34949713d80fde965aebdba2f68->enter($__internal_1edb74078de5b53e101297781bae6d89c4abb34949713d80fde965aebdba2f68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Livre:liste.html.twig"));
 
         // line 1
         echo "<table class=\"table\">
@@ -40,11 +40,11 @@ class __TwigTemplate_cb8f7fc48beda59c16dbd9926d5b7fb89c1866c2f2f8968b33f8d51c052
 \t<tr>
 \t\t<td>";
             // line 14
-            echo twig_escape_filter($this->env, $this->getAttribute($context["f"], "titre", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($context["f"], "titre", array())), "html", null, true);
             echo "</td>
 \t\t<td>";
             // line 15
-            echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute($context["f"], "description", array()), 50, false, "..."), "html", null, true);
+            echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute($context["f"], "description", array()), 50, false, twig_capitalize_string_filter($this->env, "...")), "html", null, true);
             echo "</td>
 \t\t<td><a href=\"";
             // line 16
@@ -80,7 +80,7 @@ class __TwigTemplate_cb8f7fc48beda59c16dbd9926d5b7fb89c1866c2f2f8968b33f8d51c052
 
 ";
         
-        $__internal_3a3c95bfd5f7683e443773de17d0cac40283c6cc1e2bbf6ec6265b05a4910aaf->leave($__internal_3a3c95bfd5f7683e443773de17d0cac40283c6cc1e2bbf6ec6265b05a4910aaf_prof);
+        $__internal_1edb74078de5b53e101297781bae6d89c4abb34949713d80fde965aebdba2f68->leave($__internal_1edb74078de5b53e101297781bae6d89c4abb34949713d80fde965aebdba2f68_prof);
 
     }
 
@@ -114,8 +114,8 @@ class __TwigTemplate_cb8f7fc48beda59c16dbd9926d5b7fb89c1866c2f2f8968b33f8d51c052
 {% for f in livres %}
 <tbody>
 \t<tr>
-\t\t<td>{{ f.titre }}</td>
-\t\t<td>{{ f.description | truncate(50, false, \"...\") }}</td>
+\t\t<td>{{ f.titre | capitalize}}</td>
+\t\t<td>{{ f.description | truncate(50, false, \"...\" | capitalize) }}</td>
 \t\t<td><a href=\"{{ path('myapp_livre_voir', { 'id': f.id }) }}\">Voir</a></td>
 \t\t<td><a href=\"{{ path('myapp_livre_modifier', { 'id': f.id }) }}\">Modifier</a></td>
 \t\t<td><a href=\"{{ path('myapp_livre_supprimer', { 'id': f.id }) }}\">Supprimer</a></td>

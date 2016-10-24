@@ -16,8 +16,8 @@ class __TwigTemplate_a1083a42fa3c265336fcc4d086a5c7d8b0acd94be3186ef1763c9f9dc25
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_76bb86871086624fb88d6500369cd532ca71435fed03053f208220b103944632 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_76bb86871086624fb88d6500369cd532ca71435fed03053f208220b103944632->enter($__internal_76bb86871086624fb88d6500369cd532ca71435fed03053f208220b103944632_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle::layout.html.twig"));
+        $__internal_318cd419295a4bf968a6b31e34476aa7c9690f0a28350a1c7eee74346e4853ab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_318cd419295a4bf968a6b31e34476aa7c9690f0a28350a1c7eee74346e4853ab->enter($__internal_318cd419295a4bf968a6b31e34476aa7c9690f0a28350a1c7eee74346e4853ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle::layout.html.twig"));
 
         // line 1
         echo "<html>
@@ -67,42 +67,45 @@ class __TwigTemplate_a1083a42fa3c265336fcc4d086a5c7d8b0acd94be3186ef1763c9f9dc25
             <div id=\"footer\">
                 <div class=\"row\">
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Présentation</4>
+                        <h4>Présentation</h4>
+                        <p>Vous pouvez référencer toutes vos lectures pour ne pas les oublier.</p>
                     </div>
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Copyright</h4>
+                        <h4><i class=\"fa fa-copyright\" aria-hidden=\"true\"></i> Copyright</h4>
+                        <p>Raphaël IANCU</br>Florent COULON</p>
                     </div>
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Créer par:</h4>
+                        <h4>Futures fonctionnalités</h4>
+                        <p>Ce site sera amené à évoluer avec la mise en place de session utilisateur, de permettre de noter les livres...</p>
                     </div>
                 </div>
             </div>
         </div>
         <script src=\"";
-        // line 42
+        // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/bibliotheque/js/jquery.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 43
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/bibliotheque/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     </body>
 </html>";
         
-        $__internal_76bb86871086624fb88d6500369cd532ca71435fed03053f208220b103944632->leave($__internal_76bb86871086624fb88d6500369cd532ca71435fed03053f208220b103944632_prof);
+        $__internal_318cd419295a4bf968a6b31e34476aa7c9690f0a28350a1c7eee74346e4853ab->leave($__internal_318cd419295a4bf968a6b31e34476aa7c9690f0a28350a1c7eee74346e4853ab_prof);
 
     }
 
     // line 24
     public function block_content($context, array $blocks = array())
     {
-        $__internal_f939631450a237780c5909abecc1b3a494d0f3f65c19cfd7e896b8465f63e06d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f939631450a237780c5909abecc1b3a494d0f3f65c19cfd7e896b8465f63e06d->enter($__internal_f939631450a237780c5909abecc1b3a494d0f3f65c19cfd7e896b8465f63e06d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e03b881cec7a8d6a0952be9aa04dcc2137d56d8c21a1d0c289e4b3f43b26d832 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e03b881cec7a8d6a0952be9aa04dcc2137d56d8c21a1d0c289e4b3f43b26d832->enter($__internal_e03b881cec7a8d6a0952be9aa04dcc2137d56d8c21a1d0c289e4b3f43b26d832_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 25
         echo "                ";
         
-        $__internal_f939631450a237780c5909abecc1b3a494d0f3f65c19cfd7e896b8465f63e06d->leave($__internal_f939631450a237780c5909abecc1b3a494d0f3f65c19cfd7e896b8465f63e06d_prof);
+        $__internal_e03b881cec7a8d6a0952be9aa04dcc2137d56d8c21a1d0c289e4b3f43b26d832->leave($__internal_e03b881cec7a8d6a0952be9aa04dcc2137d56d8c21a1d0c289e4b3f43b26d832_prof);
 
     }
 
@@ -118,7 +121,7 @@ class __TwigTemplate_a1083a42fa3c265336fcc4d086a5c7d8b0acd94be3186ef1763c9f9dc25
 
     public function getDebugInfo()
     {
-        return array (  103 => 25,  97 => 24,  87 => 43,  83 => 42,  65 => 26,  63 => 24,  55 => 19,  51 => 18,  47 => 17,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  106 => 25,  100 => 24,  90 => 46,  86 => 45,  65 => 26,  63 => 24,  55 => 19,  51 => 18,  47 => 17,  33 => 6,  29 => 5,  23 => 1,);
     }
 
     public function getSource()
@@ -153,13 +156,16 @@ class __TwigTemplate_a1083a42fa3c265336fcc4d086a5c7d8b0acd94be3186ef1763c9f9dc25
             <div id=\"footer\">
                 <div class=\"row\">
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Présentation</4>
+                        <h4>Présentation</h4>
+                        <p>Vous pouvez référencer toutes vos lectures pour ne pas les oublier.</p>
                     </div>
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Copyright</h4>
+                        <h4><i class=\"fa fa-copyright\" aria-hidden=\"true\"></i> Copyright</h4>
+                        <p>Raphaël IANCU</br>Florent COULON</p>
                     </div>
                     <div class=\"col-xs-6 col-sm-4\">
-                        <h4>Créer par:</h4>
+                        <h4>Futures fonctionnalités</h4>
+                        <p>Ce site sera amené à évoluer avec la mise en place de session utilisateur, de permettre de noter les livres...</p>
                     </div>
                 </div>
             </div>

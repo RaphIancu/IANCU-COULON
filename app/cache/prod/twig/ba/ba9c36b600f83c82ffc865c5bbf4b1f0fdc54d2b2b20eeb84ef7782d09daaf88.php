@@ -15,8 +15,8 @@ class __TwigTemplate_8a87622d65666b0832de8f21e9196034e04f0a74b67b225ae4f96dafa0c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6dbd589ca5dade71efd39cc6b2424d6aaf2c97d0cf6abb203c6c16fc579ac3b4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6dbd589ca5dade71efd39cc6b2424d6aaf2c97d0cf6abb203c6c16fc579ac3b4->enter($__internal_6dbd589ca5dade71efd39cc6b2424d6aaf2c97d0cf6abb203c6c16fc579ac3b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:liste.html.twig"));
+        $__internal_2fb014b8b5422a8baa0741d50a68de8b2762aafcb8a7637c468ecf32cd8e6cfb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2fb014b8b5422a8baa0741d50a68de8b2762aafcb8a7637c468ecf32cd8e6cfb->enter($__internal_2fb014b8b5422a8baa0741d50a68de8b2762aafcb8a7637c468ecf32cd8e6cfb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BibliothequeBundle:Autheur:liste.html.twig"));
 
         // line 1
         echo "<table class=\"table\">
@@ -41,11 +41,11 @@ class __TwigTemplate_8a87622d65666b0832de8f21e9196034e04f0a74b67b225ae4f96dafa0c
     <tr>
 \t\t<td>";
             // line 15
-            echo twig_escape_filter($this->env, $this->getAttribute($context["a"], "nom", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, $this->getAttribute($context["a"], "nom", array())), "html", null, true);
             echo "</td>
 \t\t<td>";
             // line 16
-            echo twig_escape_filter($this->env, $this->getAttribute($context["a"], "prenom", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($context["a"], "prenom", array())), "html", null, true);
             echo "</td>
 \t\t<td>";
             // line 17
@@ -81,7 +81,7 @@ class __TwigTemplate_8a87622d65666b0832de8f21e9196034e04f0a74b67b225ae4f96dafa0c
         // line 28
         echo "</table>";
         
-        $__internal_6dbd589ca5dade71efd39cc6b2424d6aaf2c97d0cf6abb203c6c16fc579ac3b4->leave($__internal_6dbd589ca5dade71efd39cc6b2424d6aaf2c97d0cf6abb203c6c16fc579ac3b4_prof);
+        $__internal_2fb014b8b5422a8baa0741d50a68de8b2762aafcb8a7637c468ecf32cd8e6cfb->leave($__internal_2fb014b8b5422a8baa0741d50a68de8b2762aafcb8a7637c468ecf32cd8e6cfb_prof);
 
     }
 
@@ -116,8 +116,8 @@ class __TwigTemplate_8a87622d65666b0832de8f21e9196034e04f0a74b67b225ae4f96dafa0c
 {% for a in autheurs %}
 <tbody>
     <tr>
-\t\t<td>{{ a.nom }}</td>
-\t\t<td>{{ a.prenom }}</td>
+\t\t<td>{{ a.nom | upper}}</td>
+\t\t<td>{{ a.prenom | capitalize}}</td>
 \t\t<td>{{ a.dateNaissance|date('d/m/Y') }}</td>
 \t\t<td>{{ a.sexe }}</td>
 \t\t<td><a href=\"{{ path('myapp_autheur_modifier', { 'id': a.id }) }}\">Modifier</a></td>
